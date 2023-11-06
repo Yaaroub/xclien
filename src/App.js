@@ -28,7 +28,7 @@ function App() {
             <ul>
               <li>Reinigung von Ferienhäusern</li>
               <li>Büroreinigung</li>
-              <li>Gebäudenreinigung</li>
+              <li>Endreinigung bei Umzügen</li>
               <li>Gebäudereinigung</li>
             </ul>
           </div>
