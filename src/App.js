@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { MovingComponent } from "react-moving-text";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MovingComponent
+        type="slideInFromTop"
+        duration="2000ms"
+        delay="0s"
+        direction="normal"
+        timing="ease"
+        iteration="1"
+        fillMode="none">
+        <h1>XClien</h1>
+      </MovingComponent>
     </div>
   );
 }
