@@ -39,7 +39,7 @@ function App() {
                 Handynummer: <a href="tel:017640499965">017640499965</a>
               </li>
               <li>
-                E-mail: <a href="mail:xclien.r@gmail.com">xclien.r@gmail.com</a>
+                E-mail: <a href="mailto:xclien.r@gmail.com">xclien.r@gmail.com</a>
               </li>
               <li>
                 Home page: <a href="https://xclien.onrender.com/">xclien</a>
