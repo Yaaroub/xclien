@@ -1,0 +1,23 @@
+.home{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    max-width: 80%;
+    margin: auto;
+   text-align: center;
+   gap: 20px;
+  
+   padding: 20px;
+   border-radius: 20px;
+   min-height:300px;
+}
+
+.mid-line{
+    height: 150px;
+    background-color: black;
+    width: 5px;
+}
+.k-beschreibung{
+    font-weight: bolder;
+    font-size: large;
+}

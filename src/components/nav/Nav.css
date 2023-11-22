@@ -1,0 +1,96 @@
+.nav {
+  margin-bottom: 60px;
+}
+
+.desktop-navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.desktop-navbar a {
+  text-decoration: none;
+  color: rgba(148, 185, 255, 1);
+  padding: 5px;
+  font-weight: 800;
+  transition: 0.7s;
+  border-radius: 5px;
+  font-size: larger;
+}
+.desktop-navbar a:hover {
+  background-color: rgba(148, 185, 255, 1);
+  color: #333;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-icon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.line {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+.burger-icon.open .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger-icon.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-icon.open .line:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  gap: 20px;
+}
+.menu a {
+  text-decoration: none;
+  color: #333;
+  padding: 2px;
+  border-radius: 3px;
+}
+.menu a:hover {
+  color: rgba(148, 185, 255, 1);
+  background-color: #333;
+}
+@media only screen and (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .desktop-navbar {
+    display: none;
+  }
+}

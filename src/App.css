@@ -5,6 +5,9 @@ body {
     rgba(205, 255, 216, 1) 12%,
     rgba(148, 185, 255, 1) 77%
   );
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 h1 {
   text-align: center;

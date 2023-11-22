@@ -1,18 +1,13 @@
 import "./App.css";
+import Nav from "./components/nav/Nav";
+import Home from "./components/home/Home";
 import { MovingComponent } from "react-moving-text";
 function App() {
   return (
     <div className="App">
-      <MovingComponent
-        type="slideInFromTop"
-        duration="2000ms"
-        delay="0s"
-        direction="normal"
-        timing="ease"
-        iteration="1"
-        fillMode="none">
-        <h1>XClien</h1>
-      </MovingComponent>
+      <Nav/>
+      <Home/>
+
 
       <MovingComponent
         type="blur"
