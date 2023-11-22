@@ -8,6 +8,7 @@ const Nav = () => {
   };
   return (
     <div className="nav">
+      <img src="/logo.svg" alt="logo" />
       <div className="burger-menu">
         <div
           className={`burger-icon ${isOpen ? "open" : ""}`}

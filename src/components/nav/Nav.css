@@ -1,5 +1,12 @@
 .nav {
   margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.nav img{
+display: none;
+  
 }
 
 .desktop-navbar {
@@ -93,4 +100,16 @@
   .desktop-navbar {
     display: none;
   }
+  .nav {
+    
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .nav img{
+    width:90px ;
+    height: 110px;
+    display: block;
+  }
+  
 }
