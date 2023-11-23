@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Nav.css";
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,19 +20,19 @@ const Nav = () => {
         </div>
         {isOpen && (
           <div className="menu">
-            <a href="/">Home</a>
-            <a href="/about">Leistungen</a>
-            <a href="/contact">Über uns</a>
-            <a href="/contact">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/leistung">Leistungen</Link>
+            <Link to="/überUns">Über uns</Link>
+            <Link to="/kontakt">Kontakt</Link>
           </div>
         )}
       </div>
 
       <div className="desktop-navbar">
-        <a href="/">Home</a>
-        <a href="/about">Leistungen</a>
-        <a href="/contact">Über uns</a>
-        <a href="/contact">Contact</a>
+        <Link to="/">Home</Link>
+        <Link to="/leistung">Leistungen</Link>
+        <Link to="/überUns">Über uns</Link>
+        <Link to="/kontakt">Kontakt</Link>
       </div>
     </div>
   );

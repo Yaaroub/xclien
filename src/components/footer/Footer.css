@@ -1,0 +1,35 @@
+/* CSS-Styling für den Footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  max-height: 210px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons img {
+  width: 20px; /* Passen Sie die Größe der Social-Media-Icons an */
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  background-color: rgb(
+    34,
+    34,
+    34
+  );
+   
+}

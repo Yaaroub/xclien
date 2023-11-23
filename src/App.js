@@ -1,50 +1,26 @@
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Footer from "./components/footer/Footer";
 import Nav from "./components/nav/Nav";
 import Home from "./components/home/Home";
+import Leistung from "./components/leistung/Leistung";
+import ÜberUns from "./components/überUns/ÜberUns"
+import Kontakt from "./components/kontakt/Kontakt";
 import { MovingComponent } from "react-moving-text";
 function App() {
   return (
-    <div className="App">
-      <Nav/>
-      <Home/>
-
-
-      <MovingComponent
-        type="blur"
-        duration="1000ms"
-        delay="0s"
-        direction="alternate"
-        timing="linear"
-        iteration="2"
-        fillMode="none">
-        <main>
-          <div className="Dienst">
-            <h3>Unsere Dienste :</h3>
-            <ul>
-              <li>Reinigung von Ferienhäusern</li>
-              <li>Büroreinigung</li>
-              <li>Endreinigung bei Umzügen</li>
-              <li>Gebäudereinigung</li>
-            </ul>
-          </div>
-          <div className="kontakt">
-            <h4>kontakt Daten</h4>
-            <ul>
-              <li>
-                Handynummer: <a href="tel:017640499965">017640499965</a>
-              </li>
-              <li>
-                E-mail: <a href="mailto:xclien.r@gmail.com">xclien.r@gmail.com</a>
-              </li>
-              <li>
-                Home page: <a href="https://xclien.onrender.com/">xclien</a>
-              </li>
-              <li>Sitz: 24306, Plön</li>
-            </ul>
-          </div>
-        </main>
-      </MovingComponent>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Nav />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/leistung" element={<Leistung />}></Route>
+          <Route path="/überUns" element={<ÜberUns />}></Route>
+          <Route path="/kontakt" element={<Kontakt />}></Route>
+        </Routes>
+        <Footer/>
+      </div>
+    </BrowserRouter>
   );
 }
 
